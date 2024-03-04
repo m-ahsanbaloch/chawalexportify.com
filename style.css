@@ -5,7 +5,14 @@
   margin: 0px !important;
   padding: 0px !important;
 }
+*{
+  font-family: pop-reg !important;
 
+}
+@font-face {
+  font-family: pop-reg;
+  src: url(assets/fonts/Poppins-Regular.ttf);
+}
 /* body{
     background-color: red;
 
@@ -31,6 +38,8 @@ a {
   color: rgb(13, 26, 38);
   position: fixed;
   top: 0;
+  font-weight: bold;
+  font-size: 22px;
   height: 60px;
   line-height: 60px;
   width: 100vw;
@@ -95,7 +104,7 @@ a {
 }
 
 #navbar li a {
-  color: rgb(13, 26, 38);
+  color: rgb(106, 113, 117);
   display: block;
   font-size: 0.7em;
   font-weight: bold;
@@ -112,7 +121,7 @@ a {
 
 #navbar li a:hover {
   /* border-bottom: 1px solid rgb(28, 121, 184); */
-  color: rgb(28, 121, 184);
+  color: rgb(12, 12, 12);
   transition: all 1s ease;
   -webkit-transition: all 1s ease;
 }
