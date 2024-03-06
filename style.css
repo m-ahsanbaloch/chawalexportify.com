@@ -366,6 +366,7 @@ box-shadow: inset 0px -5px 13px -8px rgba(227,227,227,1) !important;
   width: 100vw;
   height: 100vh;
   -webkit-transition: transform 0.2s ease-out;
+  z-index: 9;
   transition: transform 0.2s ease-out;
 }
 
@@ -420,7 +421,7 @@ width: 100% !important;
   align-items: center;
   height: 100%;
   top: 120px  ;
-  /* z-index: 99999999; */
+  z-index: 99999999;
 }
 .inside-text{
 
