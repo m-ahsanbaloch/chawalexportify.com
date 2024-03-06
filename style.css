@@ -5,9 +5,8 @@
   margin: 0px !important;
   padding: 0px !important;
 }
-*{
+* {
   font-family: pop-reg !important;
-
 }
 @font-face {
   font-family: pop-reg;
@@ -37,15 +36,21 @@ a {
   background: white;
   color: rgb(13, 26, 38);
   position: fixed;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
   top: 0;
   font-weight: bold;
-  font-size: 22px;
-  height: 60px;
+  font-size: 18px;
+  height: 110px;
   line-height: 60px;
   width: 100vw;
   z-index: 10;
   margin: 0px !important;
   padding: 0px !important;
+  -webkit-box-shadow: inset 0px -5px 13px -8px rgba(227,227,227,1) !important;
+-moz-box-shadow: inset 0px -5px 13px -8px rgba(227,227,227,1) !important;
+box-shadow: inset 0px -5px 13px -8px rgba(227,227,227,1) !important;
 }
 
 .nav-wrapper {
@@ -65,12 +70,17 @@ a {
 }
 
 .logo {
+  position: absolute;
+  top: 4px;
   float: left;
   /* margin-left: 28px; */
   font-size: 1.5em;
   height: 30px;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+.logo img {
+  width: 100px;
 }
 @media (max-width: 768px) {
   .logo {
@@ -80,13 +90,16 @@ a {
 
 #navbar ul {
   display: inline-block;
-  /* float: right; */
+  float:right;
   list-style: none;
   /* margin-right: 14px; */
   margin-top: -2px;
   text-align: right;
   transition: transform 0.5s ease-out;
   -webkit-transition: transform 0.5s ease-out;
+}
+#navbar li{
+  margin-left: 10px !important;
 }
 @media (max-width: 900px) {
   #navbar ul {
@@ -169,7 +182,7 @@ a {
     display: block;
     position: fixed;
     right: 15px;
-    top: 20px;
+    top: 40px;
     height: 23px;
     width: 27px;
     z-index: 12;
@@ -383,7 +396,32 @@ a {
   transition: color 0.3s ease;
 }
 /* =============== navbar-end ==================== */
-.slider-video video {
+.slider-main{
+  position: relative;
+  width: 100%;
+  /* top: 120px; */
+}
+.slider-video{
+width: 100% !important;
+/* height: 100%; */
+}
+.slider-video img {
   margin-top: 50px !important;
   width: 100%;
+  height:100vh;
+  object-fit:  cover;
+
+}
+.vid-text{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  top: 120px  ;
+  /* z-index: 99999999; */
+}
+.inside-text{
+
 }
